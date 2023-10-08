@@ -28,7 +28,7 @@ export const AuthorizeField = <T extends {}>(prop: IAuthorizeField<T>) => {
       placeholder={placeholder}
       keyboardType={fieldType === 'email' ? 'email-address' : 'default'}
       inputMode={fieldType === 'email' ? 'email' : 'text'}
-      secureTextEntry
+      secureTextEntry={fieldType === 'password'}
       style={{
         ...styles.input,
         ...style,

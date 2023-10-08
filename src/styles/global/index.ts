@@ -7,11 +7,6 @@ export enum GStyleElementKeys {
   secondaryButton = 'secondaryButton'
 }
 
-export enum GStyleHandKeys {
-  left = 'left',
-  right = 'right'
-}
-
 export const PoppinsMedium = 'Poppins-Medium';
 
 export const gStyleStatic: NamedStyles<{ [key in GStyleElementKeys]: {} }> = {

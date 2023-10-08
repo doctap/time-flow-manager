@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
-import { Layout } from '../../containers';
-import { gStyleStatic } from '../../../styles';
+import { Layout } from '../../components/containers';
+import { gStyleStatic } from '../../styles';
 
 export const Home = () => {
   return (

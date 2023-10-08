@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Image } from 'react-native';
 
-export const Br = () => {
+export const Hr = () => {
   return (
-    <Image source={require('./br.png')} />
+    <Image source={require('./hr.png')} />
   );
 };
 

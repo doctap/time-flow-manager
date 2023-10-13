@@ -3,35 +3,36 @@ import { NamedStyles } from '../../types';
 export enum GStyleElementKeys {
   screen = 'screen',
   input = 'input',
-  primaryButton = 'primaryButton',
-  secondaryButton = 'secondaryButton'
+  primaryBtn = 'primaryBtn',
+  secondaryBtn = 'secondaryBtn',
+  title = 'title',
+  primaryText = 'primaryText'
 }
 
 export const PoppinsMedium = 'Poppins-Medium';
 
+// colors
+const grey = '#363942CC';
+const darkgrey = '#363942';
+
 export const gStyleStatic: NamedStyles<{ [key in GStyleElementKeys]: {} }> = {
   screen: {
-    height: '100%',
-    width: '100%',
-    paddingTop: 40,
-    paddingHorizontal: 20,
     backgroundColor: '#F2F5FF'
   },
   input: {
-    color: '#363942CC',
+    color: grey,
     backgroundColor: 'white',
-    elevation: 5,
-    textAlign: 'center'
   },
-  primaryButton: {
-    paddingHorizontal: 30,
-    paddingVertical: 9,
-    borderRadius: 10,
+  primaryBtn: {
     backgroundColor: '#615EE2',
     color: '#ffff'
   },
-  secondaryButton: {
-    color: '#363942'
+  secondaryBtn: {},
+  title: {
+    color: 'red',
+  },
+  primaryText: {
+    color: grey
   }
 };
 

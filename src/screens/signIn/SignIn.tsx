@@ -8,19 +8,17 @@ import { Hr } from '../../components/decarations';
 export const SignIn = () => {
   return (
     <Layout style={extensionStyles}>
-      <Text style={{ fontSize: 20, fontFamily: 'Poppins-Medium' }}>Sign In</Text>
-
       <VerticalBox alignItems='center' gap={20}>
         <AuthorizeField placeholder='Email' fieldType='email' style={gStyleStatic.input} onHandler={() => 0} />
         <AuthorizeField placeholder='Password' fieldType='password' style={gStyleStatic.input} onHandler={() => 0} />
 
         <HorizontalBox width='100%' >
-          <ButtonPressable span='Forgot you password?' isJustSpan onPress={() => console.log('pree')} />
-          <ButtonPressable span='Log In' style={gStyleStatic.primaryButton} onPress={() => console.log('pree')} />
+          <ButtonPressable onPress={() => console.log('pree')} model='secondary' span='Forgot you password?' />
+          <ButtonPressable style={gStyleStatic.primaryBtn} onPress={() => console.log('pree')} model='primary' span='Log In'  />
         </HorizontalBox>
 
         <Hr />
-        <Text style={styles.text}>You can sign in with</Text>
+        <Text style={[styles.text]}>You can sign in with</Text>
       </VerticalBox>
     </Layout>
   );

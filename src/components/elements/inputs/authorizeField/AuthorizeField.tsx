@@ -46,5 +46,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     borderRadius: 10,
     fontFamily: PoppinsMedium,
+    elevation: 5,
+    textAlign: 'center'
   }
 });

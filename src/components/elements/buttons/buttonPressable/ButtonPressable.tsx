@@ -35,7 +35,7 @@ export const ButtonPressable = <T extends {}>({ width, style, onPress, span, mod
 const styles = StyleSheet.create({
   span: {
     fontFamily: PoppinsMedium,
-    fontSize: 16
+    fontSize: 18
   },
   primarySpan: {
     color: '#fff'
@@ -45,10 +45,9 @@ const styles = StyleSheet.create({
   },
   primary: {
     paddingHorizontal: 30,
-    paddingVertical: 9,
+    height: 43,
     borderRadius: 10,
+    justifyContent: 'center'
   },
-  secondary: {
-
-  },
+  secondary: {},
 });

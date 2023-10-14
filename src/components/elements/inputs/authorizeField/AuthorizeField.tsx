@@ -41,9 +41,8 @@ export const AuthorizeField = <T extends {}>(prop: IAuthorizeField<T>) => {
 const styles = StyleSheet.create({
   input: {
     paddingHorizontal: 15,
-    paddingTop: 10,
-    paddingBottom: 7,
-    fontSize: 16,
+    height: 43,
+    fontSize: 18,
     borderRadius: 10,
     fontFamily: PoppinsMedium,
     elevation: 5,
